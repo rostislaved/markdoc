@@ -10,7 +10,10 @@ Obsidian isn't capable of exporting more than one note as pdf. Markdoc and pando
 4. Fix new lines. We need to do it because pandoc interpret one newline as no newline, so we double it
 
 ## How to use it:
-1. run markdoc: 
+0. Install Go: https://go.dev/
+1. Download and compile markdoc with:
+go install github.com/Rostislaved/markdoc@latest
+2. run markdoc: 
 > markdoc -n "root_note_name.md" -vault "/home/user/Obsidian Vault/"
 3. Open created directory
 4. Use pandoc on all *.md files. For example:
